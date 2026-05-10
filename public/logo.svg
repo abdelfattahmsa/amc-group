@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="22" fill="#F5C300"/>
+  <g stroke="#111111" stroke-width="9" fill="none" stroke-linejoin="miter" stroke-linecap="square">
+    <!-- Baseline -->
+    <line x1="14" y1="150" x2="186" y2="150"/>
+    <!-- A: pitched-roof building with crossbar -->
+    <polyline points="14,150 14,76 38,40 62,76 62,150"/>
+    <line x1="20" y1="106" x2="56" y2="106"/>
+    <!-- M: three-peak skyline -->
+    <polyline points="74,150 74,74 87,92 104,50 121,92 134,74 134,150"/>
+    <!-- C: portal frame open on right -->
+    <polyline points="186,68 148,68 148,150 186,150"/>
+  </g>
+</svg>

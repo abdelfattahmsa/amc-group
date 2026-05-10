@@ -86,11 +86,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={15} className="text-gold-400 shrink-0" />
-                <a href="tel:+201000000000" className="text-sm hover:text-gold-400 transition-colors">+20 100 000 0000</a>
+                <a href="tel:+201004710703" className="text-sm hover:text-gold-400 transition-colors">+20 100 471 0703</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={15} className="text-gold-400 shrink-0" />
-                <a href="mailto:info@amc-group.com" className="text-sm hover:text-gold-400 transition-colors">info@amc-group.com</a>
+                <a href="mailto:info@amc-group.net" className="text-sm hover:text-gold-400 transition-colors">info@amc-group.net</a>
               </li>
               <li className="flex items-center gap-3">
                 <Linkedin size={15} className="text-gold-400 shrink-0" />
@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-white/40">
-            &copy; {new Date().getFullYear()} AMC Group. All rights reserved.
+            &copy; {new Date().getFullYear()} AMC Group. All rights reserved. &nbsp;·&nbsp; info@amc-group.net
           </p>
           <p className="text-xs text-white/40">
             Civil Engineering Consulting — Cairo, Egypt
