@@ -108,7 +108,7 @@ function ContactForm() {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                placeholder="+20 100 000 0000"
+                placeholder="+20 100 471 0703"
                 className="w-full border border-steel-200 focus:border-navy-500 focus:outline-none px-4 py-3 text-sm text-navy-900 bg-white placeholder-steel-400 transition-colors"
               />
             </div>
@@ -192,16 +192,16 @@ function ContactInfo() {
           {
             icon: Phone,
             label: 'Phone',
-            primary: '+20 100 000 0000',
+            primary: '+20 100 471 0703',
             secondary: 'Sun–Thu, 9:00 AM – 5:00 PM',
-            href: 'tel:+201000000000',
+            href: 'tel:+201004710703',
           },
           {
             icon: Mail,
             label: 'Email',
-            primary: 'info@amc-group.com',
+            primary: 'info@amc-group.net',
             secondary: 'Response within 1–2 business days',
-            href: 'mailto:info@amc-group.com',
+            href: 'mailto:info@amc-group.net',
           },
           {
             icon: Linkedin,

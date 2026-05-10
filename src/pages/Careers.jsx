@@ -255,7 +255,7 @@ function PositionCard({ position, delay = 0 }) {
               Apply for This Position <ArrowRight size={15} />
             </Link>
             <p className="text-xs text-steel-400 mt-3">
-              Send your CV and a brief cover note to <a href="mailto:careers@amc-group.com" className="underline hover:text-navy-900">careers@amc-group.com</a>
+              Send your CV and a brief cover note to <a href="mailto:careers@amc-group.net" className="underline hover:text-navy-900">careers@amc-group.net</a>
             </p>
           </div>
         </div>
@@ -312,7 +312,7 @@ function SpontaneousCTA() {
           If you're a structural engineer with strong technical credentials and you believe you'd raise the quality of our team — send us your CV. We review every unsolicited application from qualified engineers.
         </p>
         <a
-          href="mailto:careers@amc-group.com"
+          href="mailto:careers@amc-group.net"
           className="btn-primary"
         >
           Send Your CV <ArrowRight size={16} />

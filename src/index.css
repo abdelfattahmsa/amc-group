@@ -35,7 +35,7 @@
   }
 
   .section-label {
-    @apply text-gold-500 font-semibold tracking-widest text-xs uppercase mb-3;
+    @apply text-gold-600 font-semibold tracking-widest text-xs uppercase mb-3;
   }
 
   .section-title {

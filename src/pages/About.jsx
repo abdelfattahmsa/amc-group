@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import {
   ArrowRight, Target, Eye, Compass,
   Shield, Award, TrendingUp, Users,
-  CheckCircle, Layers, HardHat
+  CheckCircle, Layers
 } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import { useInView } from '../hooks/useInView'
@@ -214,97 +214,6 @@ function ValueCard({ icon: Icon, title, desc, delay = 0 }) {
   )
 }
 
-// ── Team Section ────────────────────────────────────────────────────────────
-const TEAM = [
-  {
-    name: 'Dr. [Name]',
-    title: 'Founder & Principal Structural Engineer',
-    spec: 'RC & Steel Frame Design · Seismic Engineering',
-    exp: '20+ years',
-  },
-  {
-    name: 'Eng. [Name]',
-    title: 'Senior Structural Engineer',
-    spec: 'Foundation Design · Geotechnical Integration',
-    exp: '15+ years',
-  },
-  {
-    name: 'Eng. [Name]',
-    title: 'Construction Supervision Lead',
-    spec: 'Site QA/QC · Specification Compliance',
-    exp: '12+ years',
-  },
-  {
-    name: 'Eng. [Name]',
-    title: 'Forensic & Rehabilitation Specialist',
-    spec: 'Failure Analysis · Expert Reporting',
-    exp: '18+ years',
-  },
-]
-
-function TeamSection() {
-  const [ref, inView] = useInView()
-
-  return (
-    <section className="py-24 bg-navy-900 relative overflow-hidden">
-      <div className="absolute inset-0 bg-grid-pattern" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div
-          ref={ref}
-          className={`mb-14 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-        >
-          <p className="section-label text-gold-400">The Team</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white max-w-xl">
-            Senior Engineers. Direct Engagement.
-          </h2>
-          <div className="divider-gold mt-5" />
-          <p className="text-steel-300 mt-6 max-w-2xl">
-            Our team is structured so that every client has direct access to the senior engineer responsible for their project. No layers, no juniors as the sole point of contact.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
-          {TEAM.map((member, i) => (
-            <TeamCard key={member.name} member={member} delay={i * 100} />
-          ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <Link to="/contact" className="btn-primary">
-            Work With Our Team <ArrowRight size={16} />
-          </Link>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function TeamCard({ member, delay = 0 }) {
-  const [ref, inView] = useInView()
-
-  return (
-    <div
-      ref={ref}
-      className={`bg-navy-800/60 hover:bg-navy-800 p-8 transition-all duration-300 transition-opacity duration-700 ${
-        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-      }`}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {/* Avatar placeholder */}
-      <div className="w-16 h-16 bg-navy-700 border border-white/10 flex items-center justify-center mb-6">
-        <HardHat size={24} className="text-gold-400" />
-      </div>
-      <h4 className="text-white font-bold mb-1">{member.name}</h4>
-      <p className="text-gold-400 text-xs font-medium mb-3 leading-snug">{member.title}</p>
-      <p className="text-steel-400 text-xs leading-relaxed mb-4">{member.spec}</p>
-      <span className="inline-block bg-gold-400/10 text-gold-400 text-xs px-3 py-1 font-medium">
-        {member.exp} experience
-      </span>
-    </div>
-  )
-}
-
 // ── Page ────────────────────────────────────────────────────────────────────
 export default function About() {
   return (
@@ -317,7 +226,6 @@ export default function About() {
       <Overview />
       <MissionVision />
       <CoreValues />
-      <TeamSection />
     </>
   )
 }
