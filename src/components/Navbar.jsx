@@ -14,7 +14,7 @@ const NAV_LINKS = [
 function Logo({ onClick }) {
   return (
     <Link to="/" onClick={onClick} className="flex items-center gap-3 group shrink-0">
-      <img src="/logo.svg" alt="AMC Group" className="h-10 w-10 rounded-md" />
+      <img src="/logo.png" alt="AMC Group" className="h-10 w-10 rounded-lg object-contain" />
       <div className="flex flex-col leading-none">
         <span className="text-white font-bold text-base tracking-wider">AMC Group</span>
         <span className="text-gold-400/70 text-[10px] tracking-widest uppercase font-medium">
