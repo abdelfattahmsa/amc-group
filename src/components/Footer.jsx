@@ -30,12 +30,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-9 h-9 bg-gold-400 flex items-center justify-center">
-                <span className="text-navy-900 font-black text-xs tracking-wider">AMC</span>
-              </div>
+              <img src="/logo.svg" alt="AMC Group" className="h-10 w-10 rounded-lg object-contain" />
               <div className="flex flex-col leading-none">
                 <span className="text-white font-bold text-base tracking-wider">AMC Group</span>
-                <span className="text-gold-400/60 text-[10px] tracking-widest uppercase">Engineering Consultants</span>
+                <span className="text-gold-400/60 text-[10px] tracking-widest uppercase">Structural Engineering Firm</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-6">
